@@ -55,7 +55,7 @@ let server;
 
 const startServer = () => {
     if (!server) {
-        server = app.listen(port, '0.0.0.0', () => {
+        server = app.listen(port, () => {
             console.log(`Serveur en cours d'exécution sur http://localhost:${port}`);
         });
     }
